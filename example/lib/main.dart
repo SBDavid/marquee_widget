@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:marquee_widget/marquee_widget.dart';
+import 'package:flutter_marquee_widget/flutter_marquee_widget.dart';
 
 void main() => runApp(MyApp());
 
@@ -67,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Container(
           height: 50,
           width: 300,
-          child: MarqueeWidget(items, initialItemCount: 4,)
+          child: FlutterMarqueeWidget(items, initialItemCount: 4,)
         ),
       ),
     );

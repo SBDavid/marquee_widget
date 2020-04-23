@@ -1,9 +1,9 @@
-library marquee_widget;
+library flutter_marquee_widget;
 
 import 'package:flutter/material.dart';
 import 'dart:async';
 
-class MarqueeWidget extends StatefulWidget {
+class FlutterMarqueeWidget extends StatefulWidget {
   
   final List<Widget> items;
   final int initialItemCount;
@@ -11,7 +11,7 @@ class MarqueeWidget extends StatefulWidget {
   final Duration duration;
   final bool reverse;
   
-  const MarqueeWidget(this.items, {
+  const FlutterMarqueeWidget(this.items, {
     Key key,
     this.initialItemCount = 1,
     this.running = true,
@@ -25,7 +25,7 @@ class MarqueeWidget extends StatefulWidget {
   }
 }
 
-class _State extends State<MarqueeWidget> {
+class _State extends State<FlutterMarqueeWidget> {
   
   int currIndex;
   List<Widget> currWidgetList;
